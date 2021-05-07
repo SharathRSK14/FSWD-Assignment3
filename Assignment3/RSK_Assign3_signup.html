@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> RSK Sign Up | Student Portal</title>
+        <meta name="description" content="Student Portal application form">
+        <meta name="keywords" content="Student login and sign in application">
+        <meta name="author" content="Sharath Kumar">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            body {
+                background-image: url("Pictures/background.jpg");
+                margin: 0px;   
+                background-position: right bottom;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                
+            }
+
+            input[type=submit] {
+                width: 25%;
+                background-color: #0d8ee4b4;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 8px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=reset] {
+                width: 25%;
+                background-color: #0d8ee4b4;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 8px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            table {
+                font-size: 20px;
+                margin: auto;
+                margin-top: 5%;
+                padding: 2%;
+                border: 2px solid;
+                border-radius: 10%;  
+                width: 60%; 
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <table border="0" cellspacing="25" bgcolor="" align="center" width="60%">
+                <th colspan="2"><h1>|| Student Registration Form ||</h1></th>
+                <tr>
+                    <td><label>Student Name:</label></td>
+                    <td><input type="text" name="fname" placeholder="First Name" required>
+                    <input type="text" name="lname" placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    <td><label>Date of Birth</label></td>
+                    <td><input type="date" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td><input type="radio" name="gender" value="male" required>Male &nbsp;
+                    <input type="radio" name="gender" value="female">Female&nbsp;
+                    <input type="radio" name="gender" value="other">Other</td>
+                </tr>
+                <tr>
+                    <td colspan="0"><label>Address:</label></td>
+                    <td><textarea name="addr" placeholder="Enter your Address" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>City:</label></td>
+                    <td>
+                        <select name="city" required>
+                            <option>Select City</option>
+                            <option value="city1">Bangalore</option>
+                            <option value="city2">Chennai</option>
+                            <option value="city3">Hyderabad</option>
+                            <option value="city4">New Delhi</option>
+                            <option value="city5">Mumbai</option>
+                            <option value="city6">Amaravati</option>
+                            <option value="city7">Cochin</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>State:</label></td>
+                    <td>
+                        <select name="state" required>
+                            <option>Select State</option>
+                            <option value="st1">Karnataka</option>
+                            <option value="st1">Tamilnadu</option>
+                            <option value="st1">Telangana</option>
+                            <option value="st1">New Delhi</option>
+                            <option value="st1">Maharashtra</option>
+                            <option value="st1">Andhra Pradesh</option>
+                            <option value="st1">Kerala</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>State:</label></td>
+                    <td><input type="number" name="pincode" placeholder="Pincode" required></td>
+                </tr>
+                <tr>
+                    <td><label>Nationality:</label></td>
+                    <td><input type="text" name="nationality" value="INDIAN" required></td>
+                </tr>
+                <tr>
+                    <td><label>Department:</label></td>
+                    <td>
+                        <select name="department" required>
+                            <option>Select Department</option>
+                            <option value="dpmt1">Arts</option>
+                            <option value="dpmt2">Commerce</option>
+                            <option value="dpmt3">Science</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Course:</label></td>
+                    <td>
+                        <select name="course" required>
+                            <option>Select Course</option>
+                            <option value="c1">BA</option>
+                            <option value="c2">BCom</option>
+                            <option value="c3">BBA</option>
+                            <option value="c4">BSc (PME)</option>
+                            <option value="c5">BSc (IT)</option>
+                            <option value="c6">BCA</option>
+                            <option value="c7">MCA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Father Name:</label></td>
+                    <td><input type="text" name="ffname" placeholder="First Name" required>
+                    <input type="text" name="flname" placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    <td><label>Mother Name:</label></td>
+                    <td><input type="text" name="mfname" placeholder="First Name" required>
+                    <input type="text" name="mlname" placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    <td><label>Email ID:</label></td>
+                    <td><input type="email" name="email" placeholder="Enter your Email Id" required></td>
+                </tr>
+                <tr>
+                    <td><label>Mobile No.:</label></td>
+                    <td><input type="tel" name="mobno" placeholder="Enter your Mobile Number" pattern="[0-9]{10}" required></td>
+                </tr>
+                <tr>
+                    <td><label>Upload Photo:</label></td>
+                    <td><input type="file" name="stdpic"></td>
+                </tr>
+                <tr>
+                    <td><label>Register Number:</label></td>
+                    <td><input type="text" name="regno" placeholder="Enter your Register Number" required></td>
+                </tr>
+                <tr>
+                    <td><label>Create Password:</label></td>
+                    <td><input type="password" name="pswd" required></td>
+                </tr>
+                <tr>
+                    <td><label>Confirm Password:</label></td>
+                    <td><input type="password" name="pswd" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><center><input type="submit" value="Submit"> <input type="reset"></center></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><center><h4>Already Registered? <a href="RSK_Assign3_login.html" target="_blank">Login Now</a></h4></a></center></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
